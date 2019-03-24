@@ -1,3 +1,49 @@
-<p>
-  graphics1 works!
-</p>
+<div class="row">
+  <div class="col-6">
+      <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"> {{ graphics.graphic1.title }} </h4>
+            <app-doughnut [labels]="graphics.graphic1.labels"
+                          [data]="graphics.graphic1.data"
+                          [chartType]="graphics.graphic1.chartType">
+            </app-doughnut>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"> {{ graphics.graphic2.title }} </h4>
+          <app-doughnut [labels]="graphics.graphic2.labels"
+                        [data]="graphics.graphic2.data"
+                        [chartType]="graphics.graphic2.chartType">
+          </app-doughnut>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+      <div class="card">
+          <div class="card-body">
+              <h4 class="card-title"> {{ graphics.graphic3.title }} </h4>
+            <app-doughnut [labels]="graphics.graphic3.labels"
+                          [data]="graphics.graphic3.data"
+                          [chartType]="graphics.graphic3.chartType">
+            </app-doughnut>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"> {{ graphics.graphic4.title }} </h4>
+          <app-doughnut [labels]="graphics.graphic4.labels"
+                        [data]="graphics.graphic4.data"
+                        [chartType]="graphics.graphic4.chartType">
+          </app-doughnut>
+        </div>
+    </div>
+  </div>
+</div>
