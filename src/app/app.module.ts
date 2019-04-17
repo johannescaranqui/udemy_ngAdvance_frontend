@@ -11,6 +11,9 @@ import { RegisterComponent } from './login/register.component';
 
 // ROUTES
 import { APP_ROUTES } from './app.routes';
+import { ServiceModule } from './services/service.module';
+
+// SERVICES
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { APP_ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
