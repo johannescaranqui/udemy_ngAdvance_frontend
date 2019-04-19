@@ -14,6 +14,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 // ROUTES
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 // GRAPHICS
 
@@ -23,7 +25,9 @@ import { ComponentsModule } from '../components/components.module';
         DashboardComponent,
         ProgressComponent,
         Graphics1Component,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromisesComponent,
+        RxjsComponent
     ],
     exports: [
         PagesComponent,
